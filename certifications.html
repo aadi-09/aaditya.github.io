@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -7,6 +7,13 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
+        <script>
+            document.addEventListener("copy", function (event) {
+                event.preventDefault();
+                const textToCopy = "Don't copy site content";
+                event.clipboardData.setData("text/plain", textToCopy);
+            });
+        </script>
         <div class="wrapper">
             <main class="content">
                 <header>
@@ -22,82 +29,21 @@
                         </ul>
                     </nav>
                 </header>
-                    <div class="h1-container">
-                        <h1>Certificates</h1>
-                        <p>
-                            <a href="index.html">Home</a><b>→ </b>
-                            <a href="certifications.html">Certifications</a>
-                        </p>
-                    </div>
-                    <h2>Internships</h2>
-                    <p class="h2-text">Certificates of Internships</p>
-                 <section id="certificates">
-                    <div class="cert-container">
-                        <div class="cert-card">
-                            <img
-                                src="certificate2.jpg"
-                                alt="Internship Certificate"
-                            />
-                            <div class="cert-info">
-                                <h3>Virtual Volunteer Intern</h3>
-                                <div class="cert-row">
-                                    <p>InAmigos Foundation</p>
-                                    <p class="date">10/2024</p>
-                                </div>
-                                <p class="description">
-                                    Laboris laborum irure tempor proident
-                                    laboris est. Deserunt deserunt ullamco
-                                    cupidatat sit eiusmod eu deserunt veniam
-                                    duis sint laboris anim eiusmod.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="cert-card">
-                            <img
-                                src="certificate3.jpg"
-                                alt="Internship Certificate"
-                            />
-                            <div class="cert-info">
-                                <h3>Business Development Intern</h3>
-                                <div class="cert-row">
-                                    <p>Pawzz Foundation</p>
-                                    <p class="date">11/2024</p>
-                                </div>
-                                <p class="description">
-                                    Culpa pariatur sunt irure consectetur magna
-                                    elit laboris amet. Reprehenderit velit nulla
-                                    dolor qui irure ad elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="cert-card">
-                            <img
-                                src="certificate4.jpg"
-                                alt="Internship Certificate"
-                            />
-                            <div class="cert-info">
-                                <h3>Internshala Student Partner</h3>
-                                <div class="cert-row">
-                                    <p>Internshala</p>
-                                    <p class="date">11/2024</p>
-                                </div>
-                                <p class="description">
-                                    Incididunt velit irure aliqua laborum magna
-                                    occaecat nulla. Anim minim exercitation
-                                    magna fugiat consequat incididunt fugiat.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <div class="h1-container">
+                    <h1>Certificates</h1>
+                    <p>
+                        <a href="index.html">Home</a><b>→ </b>
+                        <a href="certifications.html">Certifications</a>
+                    </p>
+                </div>
 
-                    <h2>Course's</h2>
-                    <p class="h2-text">Certificates of Mastery</p>
-                 <section id="certificates">
+                <h2>Course's</h2>
+                <p class="h2-text">Certificates of Mastery</p>
+                <section id="certificates">
                     <div class="cert-container">
                         <div class="cert-card">
                             <img
-                                src="certificate6.jpg"
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_2024_1228_024612.png"
                                 alt="Course Certificate"
                             />
                             <div class="cert-info">
@@ -110,16 +56,18 @@
                                     <p class="date">11/2024</p>
                                 </div>
                                 <p class="description">
-                                    Eu consequat sint occaecat excepteur. Elit
-                                    qui tempor nisi eiusmod laborum pariatur
-                                    dolor pariatur mollit deserunt aliqua.
+                                    Completed Accenture's Project Management
+                                    Virtual Experience, applying Agile and
+                                    Hybrid methodologies to a brand launch.
+                                    Gained skills in communication,
+                                    presentation, and strategic analysis.
                                 </p>
                             </div>
                         </div>
 
                         <div class="cert-card">
                             <img
-                                src="certificate5.jpg"
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_2024_1228_025255.png"
                                 alt="Course Certificate"
                             />
                             <div class="cert-info">
@@ -127,6 +75,196 @@
                                 <div class="cert-row">
                                     <p>FreeCodeCamp</p>
                                     <p class="date">11/2024</p>
+                                </div>
+                                <p class="description">
+                                    Completed a comprehensive course covering
+                                    HTML, CSS, and responsive design principles.
+                                    Gained hands-on experience building adaptive
+                                    websites that function seamlessly across
+                                    various devices.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_20241227_022824.jpg"
+                                alt="Course Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>Master Course in full-stack development</h3>
+                                <div class="cert-row">
+                                    <p>Great Learning</p>
+                                    <p class="date">11/2024</p>
+                                </div>
+                                <p class="description">
+                                    Completed a course in full-stack
+                                    development, exploring key technologies like
+                                    JavaScript, React.js, AngularJS, Bootstrap,
+                                    PHP, and jQuery. This experience
+                                    strengthened my understanding of modern web
+                                    development practices and workflows.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/UC-dce76d10-e83e-43de-abc8-629607ed2e75.jpg"
+                                alt="Course Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>JavaScript Fundamentals</h3>
+                                <div class="cert-row">
+                                    <p>Udemy</p>
+                                    <p class="date">10/2024</p>
+                                </div>
+                                <p class="description">
+                                    This certificate provided me a comprehensive
+                                    fundamental knowledge of JavaScript, its a
+                                    perfect fit for beginners in JavaScript.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_20241227_022758.jpg"
+                                alt="Course Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>Git</h3>
+                                <div class="cert-row">
+                                    <p>Simplilearn</p>
+                                    <p class="date">10/2024</p>
+                                </div>
+                                <p class="description">
+                                    Duis cupidatat officia officia veniam
+                                    deserunt. Aute nisi voluptate non pariatur
+                                    tempor exercitation incididunt labore
+                                    incididunt.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_20241227_023121.jpg"
+                                alt="Course Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>
+                                    Project Management 101: PMP Certification
+                                    Training
+                                </h3>
+                                <div class="cert-row">
+                                    <p>Simplilearn</p>
+                                    <p class="date">10/2024</p>
+                                </div>
+                                <p class="description">
+                                    Completed "Project Management 101: PMP
+                                    Certification Training" by Simplilearn's
+                                    #SkillUp initiative. Gained foundational
+                                    knowledge in project management principles
+                                    and methodologies, enhancing my ability to
+                                    plan, execute, and manage projects
+                                    effectively.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <h2>Internships</h2>
+                <p class="h2-text">Certificates of Internships</p>
+                <section id="certificates">
+                    <div class="cert-container">
+                        <div class="cert-card">
+                            <img
+                                src="certificate4.jpg"
+                                alt="Internship Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>Web Development Intern</h3>
+                                <div class="cert-row">
+                                    <p>CodSoft</p>
+                                    <p class="date">11/2024</p>
+                                </div>
+                                <p class="description">
+                                    Starting my Web Development Internship at
+                                    Codsoft, I’m excited to apply HTML, CSS,
+                                    JavaScript, and other web technologies to
+                                    design responsive applications and user
+                                    interfaces. This opportunity will enhance my
+                                    problem-solving skills, experience with
+                                    Git/GitHub, and hands-on project
+                                    development.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_20241227_022921.jpg"
+                                alt="Internship Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>Business Development Intern</h3>
+                                <div class="cert-row">
+                                    <p>Pawzz Foundation</p>
+                                    <p class="date">11/2024</p>
+                                </div>
+                                <p class="description">
+                                    Worked closely with the team to support
+                                    animal welfare initiatives. Gained hands-on
+                                    experience in fundraising, community
+                                    engagement, project management, public
+                                    relations, strategic planning and
+                                    communication. Contributed to campaigns
+                                    aimed at increasing awareness and support
+                                    for animal welfare programs.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_20241227_022954.jpg"
+                                alt="Volunteer Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>Virtual Volunteer</h3>
+                                <div class="cert-row">
+                                    <p>InAmigos Foundation</p>
+                                    <p class="date">10/2024</p>
+                                </div>
+                                <p class="description">
+                                    As a Virtual Volunteer at InAmigos
+                                    Foundation, I assist with community
+                                    outreach, volunteer coordination, and
+                                    activity participation, while contributing
+                                    ideas for organizational improvement. The
+                                    foundation promotes arts, commerce, sports,
+                                    environmental protection, and social causes
+                                    with humanity at its core.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <h2>Workshops & Participations</h2>
+                <p class="h2-text">Certificates of Achievements</p>
+                <section id="certificates">
+                    <div class="cert-container">
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Adobe_Express_20241227_0213160_1%7E2.jpg"
+                                alt="Achievement Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>BCI NeuroTech Masterclass</h3>
+                                <div class="cert-row">
+                                    <p>g.tec medical engineering GmBH</p>
+                                    <p class="date">10/2024</p>
                                 </div>
                                 <p class="description">
                                     Laboris laborum irure tempor proident
@@ -138,44 +276,167 @@
                         </div>
                         <div class="cert-card">
                             <img
-                                src="certificate6.jpg"
-                                alt="Course Certificate"
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/ba122124-875c-4baf-886d-b2c2d42d4df8.jpg"
+                                alt="Achievement Certificate"
                             />
                             <div class="cert-info">
-                                <h3>Master Course in full-stack development</h3>
+                                <h3>InnovateX</h3>
                                 <div class="cert-row">
-                                    <p>Great Learning</p>
+                                    <p>IIT Bombay (Unstop)</p>
                                     <p class="date">11/2024</p>
                                 </div>
                                 <p class="description">
-                                    Eu consequat sint occaecat excepteur. Elit
-                                    qui tempor nisi eiusmod laborum pariatur
-                                    dolor pariatur mollit deserunt aliqua.
+                                    Incididunt velit irure aliqua laborum magna
+                                    occaecat nulla. Anim minim exercitation
+                                    magna fugiat consequat incididunt fugiat.
                                 </p>
                             </div>
                         </div>
+
                         <div class="cert-card">
                             <img
-                                src="certificate7.jpg"
-                                alt="Course Certificate"
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/IMG_20220810_170809.jpg"
+                                alt="Achievement Certificate"
                             />
                             <div class="cert-info">
-                                <h3>JavaScript Fundamentals</h3>
+                                <h3>
+                                    Specialization Quiz - Online financial fraud
+                                </h3>
                                 <div class="cert-row">
-                                    <p>Udemy</p>
+                                    <p>MyGOV</p>
                                     <p class="date">10/2024</p>
                                 </div>
                                 <p class="description">
-                                    Duis cupidatat officia officia veniam
-                                    deserunt. Aute nisi voluptate non pariatur
-                                    tempor exercitation incididunt labore
-                                    incididunt.
+                                    Laboris laborum irure tempor proident
+                                    laboris est. Deserunt deserunt ullamco
+                                    cupidatat sit eiusmod eu deserunt veniam
+                                    duis sint laboris anim eiusmod.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_20241227_023048.jpg"
+                                alt="Achievement Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>Galactic problem solver</h3>
+                                <div class="cert-row">
+                                    <p>Nasa</p>
+                                    <p class="date">10/2024</p>
+                                </div>
+                                <p class="description">
+                                    As a participant in the 2024 NASA
+                                    International Space Apps Challenge, I
+                                    explored innovative solutions in
+                                    astrobiology and planetary science through
+                                    my project titled "Project Astrobi." This
+                                    experience allowed me to enhance my research
+                                    skills while collaborating with a global
+                                    community of innovators to tackle challenges
+                                    related to extraterrestrial life and
+                                    ecosystems.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_20241227_023031.jpg"
+                                alt="Achievement Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>FTC Webinar Certificate</h3>
+                                <div class="cert-row">
+                                    <p>Internshala</p>
+                                    <p class="date">14/10/2024</p>
+                                </div>
+                                <p class="description">
+                                    Laboris laborum irure tempor proident
+                                    laboris est. Deserunt deserunt ullamco
+                                    cupidatat sit eiusmod eu deserunt veniam
+                                    duis sint laboris anim eiusmod.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Screenshot_20241227_023014.jpg"
+                                alt="Achievement Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>FRC Webinar Certificate</h3>
+                                <div class="cert-row">
+                                    <p>Internshala</p>
+                                    <p class="date">22/10/2024</p>
+                                </div>
+                                <p class="description">
+                                    Laboris laborum irure tempor proident
+                                    laboris est. Deserunt deserunt ullamco
+                                    cupidatat sit eiusmod eu deserunt veniam
+                                    duis sint laboris anim eiusmod.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
 
+                <h2>Awards & Appreciations</h2>
+                <p class="h2-text">Honoring Excellence</p>
+                <section id="certificates">
+                    <div class="cert-container">
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Adobe_Express_20241227_0223200_1%7E2.jpg"
+                                alt="Appreciation Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>Talent Hunt</h3>
+                                <div class="cert-row">
+                                    <p>E_cell Up College</p>
+                                    <p class="date">10/2024</p>
+                                </div>
+                                <p class="description">
+                                    Laboris laborum irure tempor proident
+                                    laboris est. Deserunt deserunt ullamco
+                                    cupidatat sit eiusmod eu deserunt veniam
+                                    duis sint laboris anim eiusmod.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <img
+                                src="https://raw.githubusercontent.com/aadi-09/aaditya.github.io/refs/heads/main/assets/Adobe_Express_20241227_1148080_1%7E2.jpg"
+                                alt="Appreciation Certificate"
+                            />
+                            <div class="cert-info">
+                                <h3>
+                                    Saksham - 2024 Eureka! Pitching Competition
+                                </h3>
+                                <div class="cert-row">
+                                    <p>E_cell Up College</p>
+                                    <p class="date">11/2024</p>
+                                </div>
+                                <p class="description">
+                                    This competition provided an opportunity to
+                                    present an innovative startup idea focused
+                                    on neuromorphic chip technology. It involved
+                                    developing a pitch, refining business
+                                    strategies, and engaging with
+                                    entrepreneurial concepts. The experience
+                                    enhanced my understanding of the startup
+                                    process, critical thinking, and public
+                                    speaking skills, while offering valuable
+                                    lessons in adaptability and resilience in
+                                    high-pressure situations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
                 <footer class="footer">
                     <section id="contact">
                         <h2>Contact Me</h2>
