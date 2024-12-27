@@ -7,6 +7,15 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
+      
+      <script>
+document.addEventListener('copy', function (event) {
+event.preventDefault();
+const textToCopy = "Don't copy site content";
+event.clipboardData.setData('text/plain', textToCopy);
+});
+</script>
+
         <nav id="navbar">
             <ul>
                 <li><a href="#welcome-section">Home</a></li>
