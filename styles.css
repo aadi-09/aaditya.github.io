@@ -10,7 +10,8 @@ body {
     background: #f3f3f3;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -233,7 +234,8 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-#internship-certificates, #course-certificates {
+#internship-certificates,
+#course-certificates {
     margin-top: 10px;
 }
 
@@ -252,8 +254,8 @@ nav ul li a:hover {
 }
 
 .h1-container h1 {
-  margin: 0;
-  color: #fff;
+    margin: 0;
+    color: #fff;
 }
 .h1-container p {
     color: #e0e0e0;
@@ -318,6 +320,7 @@ h2 {
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Certificate Info */
