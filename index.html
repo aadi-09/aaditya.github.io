@@ -1,268 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-      
-      <script>
-document.addEventListener('copy', function (event) {
-event.preventDefault();
-const textToCopy = "Don't copy site content";
-event.clipboardData.setData('text/plain', textToCopy);
-});
-</script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="logo">Aaditya's Portfolio</div>
+			<div class="hamburger" id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<ul class="menu nav-container" id="menu">
+				<li><a href="#welcome-section">Home</a></li>
+				<hr />
+				<li><a href="#about">About</a></li>
+				<hr />
+				<li><a href="certifications.html">Certifications</a></li>
+				<hr />
+				<li><a href="#projects">Projects</a></li>
+				<hr />
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 
-        <nav id="navbar">
-            <ul>
-                <li><a href="#welcome-section">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section id="hero">
-            <div class="hero-content">
-              <div class="image-container">
-      <img src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/Adobe_Express_20241211_2117110_1-removebg-preview.png" alt="Aaditya" class="hero-image">
-      
-      <div class="spiral-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" class="spiral-svg">
-  <!-- Define marker (arrowhead) -->
-  <defs>
-    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <polygon points="0,0 10,5 0,10" fill="grey"/>
-    </marker>
-  </defs>
-  
-  <!-- Path with arrowhead at the end -->
-  <path d="M50,0 Q50,50 25,100 T50,200" fill="none" stroke="grey" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
-</svg>
-</div>
-    </div>
-                <h1>Hi, I'm Aaditya</h1>
-                <p>
-                    Aspiring Web Developer | Intern @CodSoft | Passionate about
-                    Technology and Innovation
-                </p>
-                <a href="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/Aaditya's-Resume.pdf" class="btn">Download Resume</a>
-            </div>
-        </section>
+		<section id="hero">
+			<div class="hero-content">
+				<div class="bg-img"></div>
+				<div class="image-container">
+					<img
+						src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/Adobe_Express_20241211_2117110_1-removebg-preview.png"
+						alt="Aaditya"
+						class="hero-image"
+					/>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skill-bars">
-                <div class="skill">
-                    <h3>HTML</h3>
-                    <div class="progress"><div class="bar html"></div></div>
-                </div>
-                <div class="skill">
-                    <h3>CSS</h3>
-                    <div class="progress"><div class="bar css"></div></div>
-                </div>
-                <div class="skill">
-                    <h3>JavaScript</h3>
-                    <div class="progress"><div class="bar js"></div></div>
-                </div>
-            </div>
-        </section>
+					<div class="spiral-arrow">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 100 200"
+							class="spiral-svg"
+						>
+							<!-- Define marker (arrowhead) -->
+							<defs>
+								<marker
+									id="arrowhead"
+									viewBox="0 0 10 10"
+									refX="5"
+									refY="5"
+									markerWidth="6"
+									markerHeight="6"
+									orient="auto"
+								>
+									<polygon
+										points="0,0 10,5 0,10"
+										fill="grey"
+									/>
+								</marker>
+							</defs>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects-container">
-                <div class="project-tile">
-                    <a
-                        href="https://tributepage09.netlify.app"
-                        target="_blank"
-                    >
-                      <img src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/smartmockups_m437r697.jpg"/>
-                        <h3>Tribute Page</h3>
-                        <p>
-                            A tribute to Dr. Carl Sagan, showcasing my web
-                            design skills and passion for science.
-                        </p>
-                    </a>
-                </div>
-                <div class="project-tile">
-                    <a
-                        href="https://calculator-project09.netlify.app"
-                        target="_blank"
-                    >
-                      <img src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/smartmockups_m436b63c.jpg"/>
-                        <h3>Calculator</h3>
-                        <p>
-                            A JavaScript-based calculator demonstrating
-                            interactive design and programming expertise.
-                        </p>
-                    </a>
-                </div>
-                <div class="project-tile">
-                    <a
-                        href="https://todo-list1259.netlify.app"
-                        target="_blank"
-                    >
-                      <img src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/smartmockups_m43806qc.jpg"/>
-                        <h3>ToDo-List</h3>
-                        <p>
-                            A modern, responsive ToDo-List showcasing creative
-                            web design.
-                        </p>
-                    </a>
-                </div>
-                <div class="project-tile">
-                    <a
-                        href="https://landig-page01.netlify.app"
-                        target="_blank"
-                    >
-                      <img src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/smartmockups_m4ckhpvz.jpg"/>
-                        <h3>Product Landing Page</h3>
-                        <p>
-                            Created a product landing page demonstrating my skills and creativity.
-                        </p>
-                    </a>
-                </div>
-                <div class="project-tile">
-                    <a
-                        href="https://aadityadubey.netlify.app"
-                        target="_blank"
-                    >
-                      <img src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/Neutral%20Minimalist%20Collage%20Frame%20Mockup%20Pinterest%20Pin_20241228_133909_0000.png"/>
-                        <h3>My Portfolio</h3>
-                        <p>
-                            Created a personal portfolio showcasing my skills, projects and career milestones all at one place.
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </section>
+							<!-- Path with arrowhead at the end -->
+							<path
+								d="M50,0 Q50,50 25,100 T50,200"
+								fill="none"
+								stroke="grey"
+								stroke-width="2"
+								stroke-dasharray="5,5"
+								marker-end="url(#arrowhead)"
+							/>
+						</svg>
+					</div>
+				</div>
+				<h1>Hi, I'm Aaditya</h1>
+				<p>
+					Aspiring Web Developer | Intern @CodSoft | Passionate about
+					Technology and Innovation
+				</p>
+				<a
+					href="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/Aaditya's-Resume.pdf"
+					class="btn"
+					>Download Resume</a
+				>
+			</div>
+		</section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-  Hi, I'm Aaditya, a dedicated web designer and aspiring full-stack developer. With a passion for creating user-friendly and visually captivating web experiences, I focus on blending creativity with functionality. Currently, I am advancing my skills in JavaScript while building practical projects. My goal is to master modern development tools and frameworks, paving the way for a career in software development and beyond. I believe in continuous learning, and I’m always looking for opportunities to challenge myself and grow.
-</p>
-        </section>
-        <footer>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <p>Have a project idea? Let’s connect!</p>
-                <div class="social-icons">
-                    <a
-                        href="https://twitter.com/itsaadi_09"
-                        target="_blank"
-                        class="icon"
-                    >
-                        <img
-                            src="https://raw.githubusercontent.com/aadi-09/CodSoft/7424ac5f6a964bea15e2eb76b99c2af9fd278921/assets/icons/X_icon.svg"
-                            alt="X"
-                        />
-                    </a>
-                    <a
-                        href="https://linkedin.com/in/aadityadubey"
-                        target="_blank"
-                        class="icon"
-                    >
-                        <img
-                            src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/assets/icons/LinkedIn_logo_initials.png"
-                            alt="LinkedIn"
-                        />
-                    </a>
-                    <a
-                        href="https://github.com/aadi-09"
-                        target="_blank"
-                        class="icon"
-                    >
-                        <img
-                            src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/assets/icons/GitHub_font_awesome.svg.png"
-                            alt="GitHub"
-                        />
-                    </a>
-                    <a
-                        href="https://gitlab.com/aadi-09"
-                        target="_blank"
-                        class="icon"
-                    >
-                        <img
-                            src="https://raw.githubusercontent.com/aadi-09/CodSoft/3ae22b5541449364828c803d406c467cf73d18aa/assets/icons/GitLab_icon.svg"
-                            alt="Gitlab"
-                        />
-                    </a>
-                    <a
-                        href="https://therusticreveriehub.blogspot.com"
-                        target="_blank"
-                        class="icon"
-                    >
-                        <img
-                            src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/assets/icons/Blogger.svg.png"
-                            alt="Blogger"
-                        />
-                    </a>
-                    <a
-                        href="https://deepstash.com/aadityavibes"
-                        target="_blank"
-                        class="icon"
-                    >
-                        <img
-                            src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/assets/icons/Deepstash_Logo.png"
-                            alt="Deepstash"
-                        />
-                    </a>
-                </div>
-            </section>
-            <hr />
-            <section class="footer-links">
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#blog">Blog!</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for the latest updates.</p>
-                    <form>
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            required
-                            style="
-                                padding: 10px;
-                                margin-bottom: 10px;
-                                border-radius: 5px;
-                            "
-                        />
-                        <button
-                            type="submit"
-                            style="
-                                background: #ffd700;
-                                border: none;
-                                color: black;
-                                padding: 10px 20px;
-                                cursor: pointer;
-                                border-radius: 5px;
-                            "
-                        >
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-            </section>
-            <hr />
-            <p>© 2024 Aaditya | Designed with passion.</p>
-            <p>
-                Address: 123 Innovation Drive, Tech City, Planet Earth | Phone:
-                +123 456 7890 | Email:
-                <a href="mailto:aaditya12591@outlook.com"
-                    >aaditya12591@outlook.com</a
-                >
-            </p>
-        </footer>
-    </body>
+		<section id="skills">
+			<h2>Skills</h2>
+			<div class="skill-bars">
+				<div class="skill">
+					<h3>HTML</h3>
+					<div class="progress"><div class="bar html"></div></div>
+				</div>
+				<div class="skill">
+					<h3>CSS</h3>
+					<div class="progress"><div class="bar css"></div></div>
+				</div>
+				<div class="skill">
+					<h3>JavaScript</h3>
+					<div class="progress"><div class="bar js"></div></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects">
+			<h2>My Projects</h2>
+			<div class="projects-container">
+				<div class="project-tile">
+					<a href="https://tributepage09.netlify.app" target="_blank">
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/smartmockups_m437r697.jpg"
+						/>
+						<h3>Tribute Page</h3>
+						<p>
+							A tribute to Dr. Carl Sagan, showcasing my web
+							design skills and passion for science.
+						</p>
+					</a>
+				</div>
+				<div class="project-tile">
+					<a
+						href="https://calculator-project09.netlify.app"
+						target="_blank"
+					>
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/smartmockups_m436b63c.jpg"
+						/>
+						<h3>Calculator</h3>
+						<p>
+							A JavaScript-based calculator demonstrating
+							interactive design and programming expertise.
+						</p>
+					</a>
+				</div>
+				<div class="project-tile">
+					<a href="https://todo-list1259.netlify.app" target="_blank">
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/smartmockups_m43806qc.jpg"
+						/>
+						<h3>ToDo-List</h3>
+						<p>
+							A modern, responsive ToDo-List showcasing creative
+							web design.
+						</p>
+					</a>
+				</div>
+				<div class="project-tile">
+					<a href="https://landig-page01.netlify.app" target="_blank">
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/portfolio/assets/smartmockups_m4ckhpvz.jpg"
+						/>
+						<h3>Product Landing Page</h3>
+						<p>
+							Created a product landing page demonstrating my
+							skills and creativity.
+						</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div class="abt-img"></div>
+			<h2>About Me</h2>
+			<p>
+				Hi, I'm Aaditya, a dedicated web designer and aspiring
+				full-stack developer. With a passion for creating user-friendly
+				and visually captivating web experiences, I focus on blending
+				creativity with functionality. Currently, I am advancing my
+				skills in JavaScript while building practical projects. My goal
+				is to master modern development tools and frameworks, paving the
+				way for a career in software development and beyond. I believe
+				in continuous learning, and I’m always looking for opportunities
+				to challenge myself and grow.
+			</p>
+		</section>
+		<footer>
+			<section id="contact">
+				<h2>Contact Me</h2>
+				<p>Have a project idea? Let’s connect!</p>
+				<div class="social-icons">
+					<a
+						href="https://twitter.com/itsaadi_09"
+						target="_blank"
+						class="icon"
+					>
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/7424ac5f6a964bea15e2eb76b99c2af9fd278921/assets/icons/X_icon.svg"
+							alt="X"
+						/>
+					</a>
+					<a
+						href="https://linkedin.com/in/aadityadubey"
+						target="_blank"
+						class="icon"
+					>
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/assets/icons/LinkedIn_logo_initials.png"
+							alt="LinkedIn"
+						/>
+					</a>
+					<a
+						href="https://github.com/aadi-09"
+						target="_blank"
+						class="icon"
+					>
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/assets/icons/GitHub_font_awesome.svg.png"
+							alt="GitHub"
+						/>
+					</a>
+					<a
+						href="https://gitlab.com/aadi-09"
+						target="_blank"
+						class="icon"
+					>
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/3ae22b5541449364828c803d406c467cf73d18aa/assets/icons/GitLab_icon.svg"
+							alt="Gitlab"
+						/>
+					</a>
+					<a
+						href="https://therusticreveriehub.blogspot.com"
+						target="_blank"
+						class="icon"
+					>
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/assets/icons/Blogger.svg.png"
+							alt="Blogger"
+						/>
+					</a>
+					<a
+						href="https://deepstash.com/aadityavibes"
+						target="_blank"
+						class="icon"
+					>
+						<img
+							src="https://raw.githubusercontent.com/aadi-09/CodSoft/refs/heads/main/assets/icons/Deepstash_Logo.png"
+							alt="Deepstash"
+						/>
+					</a>
+				</div>
+			</section>
+			<hr />
+			<section class="footer-links">
+				<div class="footer-column">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#blog">Blog!</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Newsletter</h3>
+					<p>Subscribe to our newsletter for the latest updates.</p>
+					<form>
+						<input
+							type="email"
+							placeholder="Enter your email"
+							required
+							style="
+								padding: 10px;
+								margin-bottom: 10px;
+								border-radius: 5px;
+							"
+						/>
+						<button
+							type="submit"
+							style="
+								background: #0066cc;
+								border: none;
+								color: black;
+								padding: 10px 20px;
+								cursor: pointer;
+								border-radius: 5px;
+							"
+						>
+							Subscribe
+						</button>
+					</form>
+				</div>
+			</section>
+			<hr />
+			<p>© 2024 Aaditya | Designed with passion.</p>
+			<p>
+				Address: Varanasi, Uttar Pradesh, India | Email:
+				<a href="mailto:aaditya12591@outlook.com"
+					>aaditya12591@outlook.com</a
+				>
+			</p>
+		</footer>
+
+		<script>
+			const hamburger = document.getElementById("hamburger");
+			const menu = document.getElementById("menu");
+
+			hamburger.addEventListener("click", () => {
+				hamburger.classList.toggle("active");
+				menu.classList.toggle("show");
+			});
+
+			document.addEventListener("copy", function (event) {
+				event.preventDefault();
+				const textToCopy = "Don't copy site content";
+				event.clipboardData.setData("text/plain", textToCopy);
+			});
+		</script>
+	</body>
 </html>
